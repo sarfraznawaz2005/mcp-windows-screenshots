@@ -59,7 +59,7 @@ Add to your `.cursor/mcp.json`:
   "mcpServers": {
     "windows-screenshots": {
       "command": "npx",
-      "args": ["mcp-windows-screenshots"]
+      "args": ["mcp-windows-screenshot"]
     }
   }
 }
@@ -72,7 +72,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "windows-screenshots": {
       "command": "npx",
-      "args": ["mcp-windows-screenshots"]
+      "args": ["mcp-windows-screenshot"]
     }
   }
 }
@@ -85,7 +85,7 @@ Add to your `~/.codeium/windsurf/mcp_config.json`:
   "mcpServers": {
     "windows-screenshots": {
       "command": "npx",
-      "args": ["mcp-windows-screenshots"]
+      "args": ["mcp-windows-screenshot"]
     }
   }
 }

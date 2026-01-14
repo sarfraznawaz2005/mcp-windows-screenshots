@@ -1,24 +1,34 @@
 {
-  "name": "mcp-windows-screenshots",
+  "name": "mcp-windows-screenshot",
   "version": "1.0.0",
   "description": "A MCP server for capturing screenshots on Windows",
-  "keywords": ["mcp", "screenshot", "windows", "automation"],
+  "keywords": [
+    "mcp",
+    "screenshot",
+    "windows",
+    "automation"
+  ],
   "author": "Sarfraz Ahmed <sarfraznawaz2005@gmail.com>",
   "license": "MIT",
   "type": "module",
   "main": "build/index.js",
   "bin": {
-    "mcp-windows-screenshots": "./build/index.js"
+    "mcp-windows-screenshot": "build/index.js"
   },
   "types": "build/index.d.ts",
   "files": [
-	"build/",
-	"bin/",
-	"README.md",
-	"LICENSE"
+    "build/",
+    "bin/",
+    "README.md",
+    "LICENSE"
   ],
-  "os": ["win32"],
-  "cpu": ["x64", "arm64"],
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
   "scripts": {
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
     "start": "node build/index.js",

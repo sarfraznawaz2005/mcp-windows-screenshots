@@ -1,6 +1,6 @@
 {
   "name": "mcp-windows-screenshot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A MCP server for capturing screenshots on Windows",
   "keywords": [
     "mcp",
@@ -30,10 +30,10 @@
     "arm64"
   ],
   "scripts": {
-    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', 0o755)\"",
     "start": "node build/index.js",
     "inspector": "npx @modelcontextprotocol/inspector -- node build/index.js",
-    "prepublishOnly": "npm run build && (echo '#!/usr/bin/env node' && cat build/index.js) > temp && mv temp build/index.js && chmod +x build/index.js",
+    "prepublishOnly": "npm run build",
     "publish:patch": "npm version patch && npm publish",
     "publish:minor": "npm version minor && npm publish"
   },

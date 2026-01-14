@@ -1,0 +1,24 @@
+# Source files (not needed for runtime)
+src/
+RegionSnip/
+*.ts
+!build/
+!bin/
+
+# Development files
+.github/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing and screenshots
+screenshots/
